@@ -1,0 +1,34 @@
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: var(--text-color);
+}
+
+:root {
+  --text-color: #e6d2aa;
+  --shadow-color: #f1efdc;
+  --background-color: #42032c;
+  --hl-color: #d36b00;
+}
+
+#Btn {
+  margin: 10px;
+  border-radius: 5px;
+}
+#input {
+  border-radius: 5px;
+}
+
+#dataInject {
+  width: 600px;
+  margin: auto;
+}
+
+.col-6 {
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
+h1 {
+  margin-top: 40px;
+  font-weight: 600;
+}
