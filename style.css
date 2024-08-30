@@ -32,3 +32,115 @@ h1 {
   margin-top: 40px;
   font-weight: 600;
 }
+
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 150px;
+  width: 150px;
+  box-shadow: greenyellow 0 5px 5px;
+  border-radius: 50%;
+  /* background: var(--hl-color); */
+}
+.logo img:hover {
+  box-shadow: var(--shadow-color) 0 5px 5px;
+  border-radius: 50%;
+  background: var(--hl-color);
+  opacity: 0.9;
+}
+.social {
+  margin-top: 25px;
+}
+.social a {
+  margin: 10px;
+}
+.social a:hover {
+  color: greenyellow;
+}
+
+header {
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  position: fixed;
+  margin-right: 0;
+}
+
+.navbar ul li {
+  padding: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-shadow: var(--shadow-color) 0 0 5px;
+}
+.navbar ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--hl-color);
+  transition: 0.5s ease;
+  box-shadow: greenyellow 0 3px 9px;
+}
+.navbar ul li a:hover {
+  color: black;
+  transition-delay: 0.5s;
+}
+.navbar ul li a:hover::before {
+  width: 100%;
+}
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--hl-color);
+  transition: 0.4s ease;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.navbar ul li a:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+footer {
+  display: flex;
+  position: bottom;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 10% 0 10%;
+}
+footer img {
+  margin-top: 20%;
+  width: 100px;
+  height: 100px;
+  box-shadow: var(--border-color) 0px 3px 6px;
+  border-radius: 50%;
+}
+
+footer .social {
+  padding: 10px;
+  margin: auto;
+}
